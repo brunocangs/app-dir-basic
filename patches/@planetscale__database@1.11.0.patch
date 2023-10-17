@@ -1,0 +1,13 @@
+diff --git a/dist/index.js b/dist/index.js
+index 3ab6c9c162e4468e9515940d17dd0b4d57e2dde9..45e2e37e8acb95b823ae4ec708946ca5ff6b2e89 100644
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -133,7 +133,7 @@ async function postJSON(config, url, body = {}) {
+             'User-Agent': `database-js/${Version}`,
+             Authorization: `Basic ${auth}`
+         },
+-        cache: 'no-store'
++        // cache: 'no-store'
+     });
+     if (response.ok) {
+         return await response.json();
